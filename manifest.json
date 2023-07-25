@@ -3,7 +3,7 @@
   "short_name": "PI",
   "theme_color": "lightgreen",
   "background_color": "lightgreen",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/"
   "icons": [
@@ -37,4 +37,4 @@
 	  "sizes": "144x144",
 	  "type": "image/png"
   },
-]
+}
