@@ -4,6 +4,15 @@
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <link rel="manifest" href="/manifest.json">
 
+ <script>
+
+	if('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js', {scope: '/'});
+		
+		}
+
+</script>
+
 <title>Насекомые</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <!<img src="insect.svg" alt="insect">
@@ -43,21 +52,7 @@
 </form>
 </div>
 
-<script scr="app.js"></script>
-<script>
-if (‘serviceWorker’ in navigator) {
- window.addEventListener(‘load’, function() {  
-   navigator.serviceWorker.register(‘/service-worker.js’).then(
-     function(registration) {
-       // Registration was successful
-       console.log(‘ServiceWorker registration successful with scope: ‘, registration.scope); },
-     function(err) {
-       // registration failed :(
-       console.log(‘ServiceWorker registration failed: ‘, err);
-     });
- });
-}
-</script>
+
 
 </body>
 </html>
